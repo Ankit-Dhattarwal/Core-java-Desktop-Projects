@@ -1,0 +1,17 @@
+import javax.swing.*;
+import java.awt.*;
+public class EventDemo 
+{
+	JFrame frame=new JFrame("Event Demo");
+	public EventDemo()
+	{
+		frame.setSize(500,400);
+		frame.setResizable(false);
+		frame.setLocationRelativeTo(null);
+		frame.setVisible(true);
+	}
+	public static void main(String[] args) 
+	{
+		new EventDemo();
+	}
+}

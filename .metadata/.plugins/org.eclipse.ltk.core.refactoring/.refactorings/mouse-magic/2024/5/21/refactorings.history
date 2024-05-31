@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;EventDemo&apos; to &apos;MouseMagic&apos;&#x0D;&#x0A;- Original project: &apos;mouse-magic&apos;&#x0D;&#x0A;- Original element: &apos;EventDemo&apos;&#x0D;&#x0A;- Renamed element: &apos;MouseMagic&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;EventDemo&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{EventDemo.java[EventDemo" matchStrategy="1" name="MouseMagic" qualified="false" references="true" similarDeclarations="false" stamp="1716275488515" textual="false" version="1.0"/>
+</session>

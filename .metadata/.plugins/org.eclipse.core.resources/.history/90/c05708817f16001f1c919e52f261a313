@@ -1,0 +1,40 @@
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+public class EventDemo 
+{
+	JFrame frame=new JFrame("Event Demo");
+	JPanel panel=new JPanel();
+	JLabel label=new JLabel("CETPA Infotech");
+	public EventDemo()
+	{
+		frame.setSize(500,400);
+		frame.setResizable(false);
+		frame.setLocationRelativeTo(null);
+		frame.add(panel);
+		panel.add(label);
+		frame.setVisible(true);
+	}
+	class ColorListener implements ActionListener
+	{
+		public void actionPerformed(ActionEvent evt)
+		{
+			JButton source=(JButton)evt.getSource();
+			//Variable source will be created
+			//getSource() method of ActionEvent class will be called
+			//Value returned by getSource() method will be converted into JButton type
+			//Converted value will be assigned to the variable source
+			
+			if(source==button1)
+				panel.setBackground(Color.red);
+			else if(source==button2)
+				panel.setBackground(Color.green);
+			else if(source==button3)
+				panel.setBackground(Color.blue);
+		}
+	}
+	public static void main(String[] args) 
+	{
+		new EventDemo();
+	}
+}

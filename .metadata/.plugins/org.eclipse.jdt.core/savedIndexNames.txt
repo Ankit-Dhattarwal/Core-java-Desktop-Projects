@@ -1,0 +1,7 @@
+INDEX VERSION 1.131+C:\CETPA\2023\new\core\12-2\desktop-app\event\.metadata\.plugins\org.eclipse.jdt.core
+1643920821.index
+1619680025.index
+3430624848.index
+3829132076.index
+2956113629.index
+2960145555.index

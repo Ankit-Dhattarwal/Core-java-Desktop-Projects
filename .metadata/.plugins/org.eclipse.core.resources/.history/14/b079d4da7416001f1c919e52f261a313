@@ -1,0 +1,19 @@
+import javax.swing.*;
+import java.awt.*;
+public class EventDemo 
+{
+	JFrame frame=new JFrame("Event Demo");
+	JPanel panel=new JPanel();
+	public EventDemo()
+	{
+		frame.setSize(500,400);
+		frame.setResizable(false);
+		frame.setLocationRelativeTo(null);
+		frame.add(panel);
+		frame.setVisible(true);
+	}
+	public static void main(String[] args) 
+	{
+		new EventDemo();
+	}
+}

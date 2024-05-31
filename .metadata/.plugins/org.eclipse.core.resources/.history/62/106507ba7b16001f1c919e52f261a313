@@ -1,0 +1,41 @@
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+public class EventDemo 
+{
+	JFrame frame=new JFrame("Event Demo");
+	JPanel panel=new JPanel();
+	JButton button1=new JButton("Red Background");
+	JButton button2=new JButton("Green Background");
+	public EventDemo()
+	{
+		frame.setSize(500,400);
+		frame.setResizable(false);
+		frame.setLocationRelativeTo(null);
+		frame.add(panel);
+		panel.setBackground(Color.yellow);
+		panel.add(button1);
+		panel.add(button2);
+		button1.addActionListener(new GreenListener());
+		button2.addActionListener(new RedListener());
+		frame.setVisible(true);
+	}
+	class RedListener implements ActionListener
+	{
+		public void actionPerformed(ActionEvent evt)
+		{
+			panel.setBackground(Color.red);
+		}
+	}
+	class GreenListener implements ActionListener
+	{
+		public void actionPerformed(ActionEvent evt)
+		{
+			panel.setBackground(Color.green);
+		}
+	}
+	public static void main(String[] args) 
+	{
+		new EventDemo();
+	}
+}

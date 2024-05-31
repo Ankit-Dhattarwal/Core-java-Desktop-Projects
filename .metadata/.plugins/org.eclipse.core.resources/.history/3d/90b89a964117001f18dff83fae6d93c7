@@ -1,0 +1,41 @@
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+public class MouseMagic 
+{
+	JFrame frame=new JFrame("Mouse Magic");
+	JLabel label=new JLabel("TOUCH ME TO SEE MAGIC");
+	int x=200,y=100;
+	public MouseMagic()
+	{
+		frame.setSize(1300,650);
+		frame.setResizable(false);
+		frame.setLocationRelativeTo(null);
+		frame.setLayout(null);
+		label.setFont(new Font("arial",0,25));
+		label.setBounds(x,y,300,35);
+		frame.add(label);
+		label.addMouseListener(new LabelListener());
+		frame.setVisible(true);
+	}
+	class LabelListener implements MouseListener
+	{
+		Font font;
+		public void mouseEntered(MouseEvent e) 
+		{
+			font=label.getFont();
+		
+		}
+		public void mouseExited(MouseEvent e) 
+		{
+			label.setFont(font);
+		}
+		public void mouseClicked(MouseEvent e) {}
+		public void mousePressed(MouseEvent e) {}
+		public void mouseReleased(MouseEvent e) {}
+	}
+	public static void main(String[] args) 
+	{
+		new MouseMagic();
+	}
+}

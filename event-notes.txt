@@ -1,0 +1,24 @@
+Event handling
+==============
+Event means occurrence
+Performing any operation can be treated as event
+
+1)Create listener class
+2)Give object of listener class to the source(such as button,frame,label,etc)
+
+
+
+public void actionPerformed(ActionEvent evt)
+This method is declared inside ActionListener interface and code to call this method is written inside click event of JButton class
+We will have to provide implementation(body) of this method
+
+class Task implements ActionListener
+{
+  public void actionPerformed(ActionEvent evt)
+  {
+	//command
+  }
+}
+In event handling programming, this class is known as event listener class.Methods overridden inside this interface are known as event handlers 
+
+

@@ -1,0 +1,29 @@
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+public class EventDemo 
+{
+	JFrame frame=new JFrame("Event Demo");
+	JPanel panel=new JPanel();
+	JButton button1=new JButton("Red Background");
+	JButton button2=new JButton("Green Background");
+	public EventDemo()
+	{
+		frame.setSize(500,400);
+		frame.setResizable(false);
+		frame.setLocationRelativeTo(null);
+		frame.add(panel);
+		panel.setBackground(Color.yellow);
+		panel.add(button1);
+		panel.add(button2);
+		frame.setVisible(true);
+	}
+	class RedListener implements ActionListener
+	{
+		
+	}
+	public static void main(String[] args) 
+	{
+		new EventDemo();
+	}
+}
